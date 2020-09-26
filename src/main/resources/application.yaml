@@ -14,7 +14,7 @@ enigma:
     oauth2:
       client-id: enigma-user
       oauth2-token-uri: "https://localhost:12443/auth/realms/enigma/protocol/openid-connect/token"
-      client-secret: "bcd4713d-3822-4119-a976-32bc0ef2596a"
+      client-secret: "2secure4u"
       trust-store: classpath:enigmaclient.p12
       trust-store-password: 2secure4u
       trust-store-type: pkcs12
