@@ -22,8 +22,8 @@ public class TestController {
         return ResponseEntity.ok(cryptoClient.encryptMap(body, key));
     }
 
-    @PostMapping(value = "decrypt/{key}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, String>> decrypt(@PathVariable String key, @RequestBody Map<String, String> body) {
-        return ResponseEntity.ok(cryptoClient.decryptMap(body, key));
+    @PostMapping(value = "decrypt", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String, String>> decrypt(@RequestBody Map<String, String> body) {
+        return ResponseEntity.ok(cryptoClient.decryptMap(body));
     }
 }
